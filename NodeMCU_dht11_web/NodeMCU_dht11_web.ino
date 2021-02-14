@@ -14,7 +14,7 @@ const char* password = "bair457589"; // пароль
 ESP8266WebServer server(80);
 
 // датчик DHT
-uint8_t DHTPin = D2; 
+uint8_t DHTPin = D7; 
                
 // инициализация датчика DHT.
 DHT dht(DHTPin, DHTTYPE);                
