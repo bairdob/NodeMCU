@@ -1,3 +1,4 @@
+#include "Ota.h"
 #include "BH1750.h"
 #include "Led.h"
 #include "Zoom.h"
@@ -10,10 +11,11 @@ enum DeviceType {
   DT_DHT11 = 4
 };
 
-const DeviceType g_deviceType = DT_DHT11;
+const DeviceType g_deviceType = DT_Led;
 
 void setup()
 {
+  OTA::setup();
   switch (g_deviceType) {
     case DT_Led:
       Led::setup();
@@ -32,6 +34,7 @@ void setup()
 
 void loop()
 {
+  OTA::loop();
   switch (g_deviceType) {
     case DT_Led:
       Led::loop();
@@ -42,7 +45,7 @@ void loop()
     case DT_Zoom:
       Zoom::loop();
       break;
-          case DT_DHT11:
+    case DT_DHT11:
       Dht11::loop();
       break;
   }

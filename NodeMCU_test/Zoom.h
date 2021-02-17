@@ -5,6 +5,9 @@ namespace Zoom{
   void setup() 
   { 
   }
+unsigned long previousTime = millis();
+
+const unsigned long interval = 1000;
    
   void loop() 
   { 
@@ -25,5 +28,11 @@ namespace Zoom{
     tone(SoundPin, 1014); 
     delay(DelaySound);
     noTone(7); // Выключаем звук 
+      ArduinoOTA.handle();
+  unsigned long diff = millis() - previousTime;
+  if(diff > interval) {
+    digitalWrite(led, !digitalRead(led));  // Change the state of the LED
+    previousTime += diff;
+  }
   }
 }
