@@ -10,7 +10,7 @@
 
 /* Введите свои SSID и пароль */
 const char* ssid = "Keenetic-3556";  // SSID
-const char* password = "bair457589"; // пароль
+const char* password = "œbair457589"; // пароль
 
 ESP8266WebServer server(80);
 

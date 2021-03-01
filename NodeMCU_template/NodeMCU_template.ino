@@ -11,7 +11,7 @@ enum DeviceType {
   DT_DHT11 = 8
 };
 //const auto g_connectedDevicesTypes = DT_Led | DT_Zoom; example
-const auto g_connectedDevicesTypes = DT_Zoom;
+const auto g_connectedDevicesTypes = DT_Led;
 
 void setup()
 {

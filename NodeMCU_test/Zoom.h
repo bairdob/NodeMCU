@@ -27,7 +27,7 @@ const unsigned long interval = 1000;
     delay(DelaySound);
     tone(SoundPin, 1014); 
     delay(DelaySound);
-    noTone(7); // Выключаем звук 
+    noTone(SoundPin); // Выключаем звук 
       ArduinoOTA.handle();
   unsigned long diff = millis() - previousTime;
   if(diff > interval) {

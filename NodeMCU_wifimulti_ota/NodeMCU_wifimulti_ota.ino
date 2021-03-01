@@ -26,7 +26,7 @@ void setup() {
   Serial.println(WiFi.SSID());              // Tell us what network we're connected to
   Serial.print("IP address:\t");
   Serial.println(WiFi.localIP());           // Send the IP address of the ESP8266 to the computer
-  
+
   //ArduinoOTA.setHostname("ESP8266");
   //ArduinoOTA.setPassword("esp8266");
 
@@ -61,7 +61,7 @@ const unsigned long interval = 1000;
 void loop() {
   ArduinoOTA.handle();
   unsigned long diff = millis() - previousTime;
-  if(diff > interval) {
+  if (diff > interval) {
     digitalWrite(led, !digitalRead(led));  // Change the state of the LED
     previousTime += diff;
   }
