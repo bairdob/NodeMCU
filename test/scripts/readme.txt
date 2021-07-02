@@ -1,0 +1,1 @@
+https://diyprojects.io/esptool-update-of-firmware-nodemcu-esp8266-on-macos/ - install esptool
