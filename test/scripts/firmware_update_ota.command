@@ -1,0 +1,1 @@
+python espota.py -d  -i 192.168.1.40 -f /Users/bair/Documents/Arduino/NodeMCU/NodeMCU_template/NodeMCU_template.ino.nodemcu.bin
