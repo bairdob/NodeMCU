@@ -1,0 +1,1 @@
+ota_ledflash;/Users/bair/Documents/Arduino/NodeMCU/NodeMCU_ota_ledflash/NodeMCU_ota_ledflash.ino;none
