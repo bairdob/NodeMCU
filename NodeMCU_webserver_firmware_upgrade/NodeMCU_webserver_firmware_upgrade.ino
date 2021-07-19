@@ -3,8 +3,8 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>
 #include <ESP8266HTTPUpdateServer.h>
-const char* ssid =     "ZyXEL_KEENETIC_4G_4FCB38";     //  SSID wi-fi роутера
-const char* password = "52293726"; // Пароль от wi-fi
+const char* ssid =     "Keenetic-3556";     //  SSID wi-fi роутера
+const char* password = "bair457589"; // Пароль от wi-fi
 #define OTAUSER         "admin"    // Логин для входа в OTA
 #define OTAPASSWORD     "admin"    // Пароль для входа в ОТА
 #define OTAPATH         "/firmware"// Путь, который будем дописывать после ip адреса в браузере.

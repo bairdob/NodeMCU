@@ -1,3 +1,2 @@
-ota_ledflash;/Users/bair/Documents/Arduino/NodeMCU/NodeMCU_ota_ledflash/NodeMCU_ota_ledflash.ino;none
-fname1;fpath1;fdesc1
-fname2;fpath2;fdesc2
+47;led16;/Users/bair/Documents/Arduino/NodeMCU/NodeMCU_ota_ledflash/NodeMCU_ota_ledflash.ino.nodemcu.bin;desc
+92;multi;/Users/bair/Documents/Arduino/NodeMCU/NodeMCU_wifimulti_ota/NodeMCU_wifimulti_ota.ino.nodemcu.bin;desc

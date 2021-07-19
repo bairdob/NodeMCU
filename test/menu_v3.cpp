@@ -82,7 +82,7 @@ private:
 	std::string name;
 	std::string ip;
 	std::string description;
-	Firmware firmware; //toDO
+	Firmware *firmware; //toDO
 
 public:
 	Controller(std::string _name = "c_name",  std::string _ip = "0.0.0.0", std::string _desc = "c_desc"): 

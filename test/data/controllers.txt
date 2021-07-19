@@ -1,3 +1,2 @@
-led;0.0.0.0;none
-cname1;cip1;cdesc1
-cname2;cip2;cdesc2
+47;led16;192.168.1.40;desc
+92;multi;192.168.1.40;desc

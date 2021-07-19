@@ -1,3 +1,0 @@
-cname1;fname1
-cname2;fname1
-led;none
