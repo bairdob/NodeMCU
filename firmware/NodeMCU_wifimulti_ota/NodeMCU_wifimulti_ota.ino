@@ -4,7 +4,7 @@
 
 ESP8266WiFiMulti wifiMulti;     // Create an instance of the ESP8266WiFiMulti class, called 'wifiMulti'
 
-const byte led = 2;
+const byte led = 16;
 
 void setup() {
   Serial.begin(115200);         // Start the Serial communication to send messages to the computer
