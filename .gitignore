@@ -1,2 +1,3 @@
 *.DS_Store
 /src/build-ota_desktop-Qt_6_2_0_for_macOS-Debug
+/src/ota_desktop/*.user
