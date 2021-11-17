@@ -6,10 +6,12 @@ Database::Database()
 
 }
 
-Database::~Database(){
+Database::~Database()
+{
     database.removeDatabase("ota_database");
 }
-void Database::connect(){
+void Database::connect()
+{
     database = QSqlDatabase::addDatabase("QPSQL");
     database.setHostName("localhost");
     database.setUserName("bair");
@@ -17,11 +19,13 @@ void Database::connect(){
     database.setDatabaseName("ota_database");
 };
 
-bool Database::open(){
+bool Database::open()
+{
     return database.open();
 };
 
-void Database::close(){
+void Database::close()
+{
     QString connection;
     connection = database.connectionName();
     database.close();

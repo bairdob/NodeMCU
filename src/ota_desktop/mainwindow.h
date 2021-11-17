@@ -8,6 +8,8 @@
 #include <QSqlQuery>
 #include <QSqlQueryModel>
 #include <QSqlRelationalTableModel>
+#include <QProcess>
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -34,11 +36,20 @@ private slots:
     void on_tableViewController_pressed(const QModelIndex &index);
     void on_tableViewFirmware_pressed(const QModelIndex &index);
 
+    void on_toolButtonControllerDelete_clicked();
+
+    void on_toolButtonControllerAdd_clicked();
+
+    void on_toolButtonContollerLoad_clicked();
+
+    void on_toolButtonFirmwareSave_clicked();
+
 private:
     Ui::MainWindow *ui;
     Database database;
     QSqlTableModel *model;
     QSqlQueryModel *qmodel;
     QSqlRelationalTableModel * rmodel;
+    QString selectRow;
 };
 #endif // MAINWINDOW_H
